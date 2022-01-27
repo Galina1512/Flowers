@@ -1,38 +1,101 @@
-.App {
+body{
+  background-image: url(fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: Verdana, sans-serif;
+  }
+.App{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.h1{
+  font-size: 50px;
+  color: rgb(119, 72, 141); 
+  font-weight: 900;
+  font-family: 'Caveat', cursive;
+}
+h1{
+  color: rgb(119, 72, 141);
+}
+h2{
+  color: rgb(230, 44, 137);
+}
+h3{
+  font-style: italic;
+  color: rgb(119, 72, 141);
+}
+h4{
+  color: rgb(201, 25, 107);
+  font-size: 22px;
+  font-family: 'Caveat', cursive;
+  margin: 30px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.baner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:none;
+  width: 70vw;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  margin: 0 0 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.picinpic{
+  display: flex;
+  width: 100vw;
+  margin-top: 0;
+}
+.navigation{
+  border-radius: 50%;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  position: absolute;
+  z-index: 5;
+}
+.btn2{
+  position: absolute;
+  right: 0;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 250px;
+  border: thick double  rgb(123, 59, 153);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.text{
+  display: flex;
+ text-align: start;
+ overflow-wrap: break-word;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btnshow{
+  border: none;
+  color: rgb(123, 59, 153);
+  font-style: italic;
+  background-color: transparent;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  .btn{
+    color:white ;
+    background-color: rgb(123, 59, 153);
+    font-family: Verdana, sans-serif;
+    padding: 5px 10px;
+    border-radius: 5px;
+    }
+    
