@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
   const [pictura, setPictura] = useState(0);
-  const {id, image, doc} = flowers[pictura];
+  const {image, doc} = flowers[pictura];
 
   const [card, setCard] = useState(data);
   const [showMore, setShowMore] = useState(false);
@@ -35,7 +35,6 @@ function App() {
   return (
     <div>
       <div  className="App">
-      {/* <h3>Цветочный магазин</h3> */}
       <h1 className='h1'>Цветы на подоконнике</h1>
       
       <div className='baner'>

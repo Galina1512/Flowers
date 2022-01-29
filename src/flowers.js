@@ -6,12 +6,18 @@ export const flowers = [
     },
     {
         id:2,
+        image: "https://images.pexels.com/photos/7765138/pexels-photo-7765138.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        doc: "У цветов не бывает будней, они всегда одеты празднично."
+
+    },
+    {
+        id:3,
         image: "https://images.pexels.com/photos/7664929/pexels-photo-7664929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         doc: "Жители планеты, где нет цветов, решили бы, что на Земле, где цветы на каждом шагу, мы, наверное, с ума сходим от радости"
 
     },
     {
-        id:3,
+        id:4,
         image: "https://images.pexels.com/photos/7765138/pexels-photo-7765138.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         doc: "У цветов не бывает будней, они всегда одеты празднично."
        

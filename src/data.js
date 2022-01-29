@@ -4,7 +4,7 @@
         name: "Фиалка",
         description: "Комнатное растение, актуальное во все времена. Аккуратная, скромная фиалка радует цветками насыщенных оттенков синего и голубого, а листья, покрытые ворсинками, добавляют растению тепла и изысканной простоты.",
         cost: 250,
-        image: "https://images.unsplash.com/photo-1595609169861-8eedf5d26662?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
+        image:"https://images.pexels.com/photos/7814299/pexels-photo-7814299.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
      },
      {
         id: 2,
@@ -41,7 +41,8 @@
         name: "Герань",
         description: "Герань – любит к себе внимание, но не слишком настойчивое, обедает прекрасными цветами различных оттенков, что делает ее выбор более вероятным, так как палитра красок достаточно велика. ",
         cost: 250,
-        image: "https://images.unsplash.com/photo-1602931703142-3d6316a74d5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+        image: "https://images.unsplash.com/photo-1588452038979-f0bfc2eea1be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+
     }
 
  ]
