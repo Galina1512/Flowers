@@ -10,7 +10,21 @@ function App() {
   const {image, doc} = flowers[pictura];
 
   const [card, setCard] = useState(data);
-  const [showMore, setShowMore] = useState(false);
+  // const [showMore, setShowMore] = useState(false);
+
+  const setShowMore = (id) =>{
+  const newCard = [];
+  card.forEach(card => {
+    if (card.id === id) {
+      const changedCard = { ...card, showMore: !card.showMore};
+      newCard.push(changedCard)
+    }
+    else {
+      newCard.push(card);
+    }
+  });
+  setCard(newCard);
+}
 
   const predFlowers =()=>{
     setPictura((pictura=>{
@@ -47,7 +61,7 @@ function App() {
 
       <div className='cards'>
       {card.map((item =>{
-        const{id, name, description, image, cost} = item;
+        const{id, name, description, showMore, image, cost} = item;
 
         const removestate = (id) =>{
           let newState = card.filter(card => card.id !==id);
@@ -59,8 +73,9 @@ function App() {
                 <h1>{name} </h1>
                 <img src={image} width='200px' alt='pictura'/>
                 <div className='text'>
-                  <p>{showMore ? description : description.substring(0, 75) +" ..."}
-                  <button onClick={()=>setShowMore (!showMore) } className='btnshow'>{showMore ? "Показать меньше" : "Показать больше"} </button> </p>
+                  <p>{showMore ? description.substring(0, 75) +" ..." : description}
+                  <button onClick={()=>setShowMore (id) } className='btnshow'>{showMore ?  "Показать больше" : "Показать меньше"} </button> 
+                  </p>
                 </div>
                 <h2>Цена от {cost} руб. </h2>
                 <button onClick={()=> removestate(id) } className='btn'>Удалить</button>
